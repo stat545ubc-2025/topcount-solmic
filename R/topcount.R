@@ -10,12 +10,11 @@
 #'
 #'@examples
 #'df <- data.frame(city = c("A","A","B","C","A","B"))
-#'topcount(df, city, n = 2)
+#'get_topcount(df, city, n = 2)
 #'@import dplyr
 #'@export
 
-
-topcount <- function(data, col, n = 10) {
+get_topcount <- function(data, col, n = 10) {
   if (!is.numeric(n) || n <= 0){
     stop("The argument 'n' must be a positive number.")
   }

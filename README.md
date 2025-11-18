@@ -4,7 +4,7 @@ Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce9
 
 \#Package Description This package was created as part if a STAT 545B
 assignment. It is called “topcount” and its goal is to allow you to
-simplify the process of searching for the top count of a data set.
+simplify the process of searching for the top count of a given data set.
 
 ## Installation
 

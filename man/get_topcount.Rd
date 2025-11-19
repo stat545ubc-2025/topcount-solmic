@@ -18,8 +18,9 @@ A tibble with two columns: the grouping column and \code{count}.
 }
 \description{
 This function will output the top count for a data set.
+If dplyr isn't imported ensure all functions from external packages use package::function()
 }
 \examples{
 df <- data.frame(city = c("A","A","B","C","A","B"))
-get_topcount(df, city, n = 2)
+topcount::get_topcount(df, city, n = 2)
 }

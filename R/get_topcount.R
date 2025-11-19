@@ -10,8 +10,7 @@
 #'@return A tibble with two columns: the grouping column and `count`.
 #'
 #'@examples
-#'library(tibble)
-#'df <- tibble(city = c("A","A","B","C","A","B"))
+#'df <- data.frame(city = c("A","A","B","C","A","B"))
 #'topcount::get_topcount(df, city, n = 2)
 #'@import dplyr
 #'@export
@@ -21,7 +20,7 @@ get_topcount <- function(data, col, n = 10) {
     stop("The argument 'n' must be a positive number.")
   }
   data %>%
-    count({{ col }}, name = "count") %>%
-    arrange(desc(count)) %>%
-    slice_head(n = n)
+    dplyr::count({{ col }}, name = "count") %>%
+    dplyr::arrange(desc(count)) %>%
+    dplyr::slice_head(n = n)
 }

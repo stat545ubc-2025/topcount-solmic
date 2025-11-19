@@ -1,9 +1,9 @@
 Package: topcount
 Title: Top count of a data set
-Version: 0.0.0.9000
+Version: 0.1.0
 Authors@R: 
     person("Soleil", "Michaud", , "first.last@example.com", role = c("aut", "cre"))
-Description: This package will help simplify the process of getting the top count of a given data set by looking at the values inputted. If dplyr isn't imported ensure all functions from external packages use package::function(). 
+Description: his package simplifies finding the most frequent values in a column of a data set.
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)

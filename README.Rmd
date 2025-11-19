@@ -6,7 +6,9 @@ output: github_document
 
 ## Package Description
 
-This package was created as part of a STAT 545B assignment. It is called ‘topcount’ and its goal is to allow you to simplify the process of searching for the top count of a given data set. 
+This package was created as part of a STAT 545B assignment. It is called
+"topcount" and its goal is to simplify the process of finding the most
+frequent values (top counts) in a given data set.
 
 ## Installation
 
@@ -26,7 +28,6 @@ If dplyr isn't imported ensure all functions from external packages use package:
 This is a basic example which shows you how to solve a common problem:
 
 ``` {r}
-library(tibble)
-df <- tibble(city = c("A","A","B","C","A","B"))
+df <- data.frame(city = c("A","A","B","C","A","B"))
 topcount::get_topcount(df, city, n = 2)
 ```

@@ -10,4 +10,4 @@ test_that("topcounts works correctly", {
 
   # Expect correct number of returned rows
   expect_equal(nrow(get_topcount(df, group, n = 2)), 2)
-})
+  })

@@ -20,7 +20,7 @@ package installation can be directly done by calling
 library(topcount)
 ```
 
-If dplyr isn’t imported ensure all functions from external packages use
+if dplyr isn’t imported ensure all functions from external packages use
 package::function()
 
 ## Example
